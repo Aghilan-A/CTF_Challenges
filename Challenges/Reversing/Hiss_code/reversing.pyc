@@ -1,0 +1,40 @@
+ 13           0 LOAD_CONST               1 ('')
+              2 STORE_FAST               1 (this_one_or_that_one)
+
+ 14           4 LOAD_GLOBAL              0 (range)
+              6 LOAD_CONST               2 (0)
+              8 LOAD_GLOBAL              1 (len)
+             10 LOAD_FAST                0 (x)
+             12 CALL_FUNCTION            1
+             14 LOAD_CONST               3 (2)
+             16 CALL_FUNCTION            3
+             18 GET_ITER
+        >>   20 FOR_ITER                23 (to 68)
+             22 STORE_FAST               2 (i)
+
+ 15          24 LOAD_FAST                2 (i)
+             26 LOAD_GLOBAL              1 (len)
+             28 LOAD_FAST                0 (x)
+             30 CALL_FUNCTION            1
+             32 LOAD_CONST               4 (1)
+             34 BINARY_SUBTRACT
+             36 COMPARE_OP               3 (!=)
+             38 POP_JUMP_IF_FALSE       33 (to 66)
+
+ 16          40 LOAD_FAST                1 (this_one_or_that_one)
+             42 LOAD_GLOBAL              2 (sssssswitch)
+             44 LOAD_FAST                0 (x)
+             46 LOAD_FAST                2 (i)
+             48 BINARY_SUBSCR
+             50 LOAD_FAST                0 (x)
+             52 LOAD_FAST                2 (i)
+             54 LOAD_CONST               4 (1)
+             56 BINARY_ADD
+             58 BINARY_SUBSCR
+             60 CALL_FUNCTION            2
+             62 INPLACE_ADD
+             64 STORE_FAST               1 (this_one_or_that_one)
+        >>   66 JUMP_ABSOLUTE           10 (to 20)
+
+ 17     >>   68 LOAD_FAST                1 (this_one_or_that_one)
+             70 RETURN_VALUE
