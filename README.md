@@ -1,2 +1,2 @@
 # CTF_Challenges
-CTF challenges that I created (for events and for practice)
+CTF Challenges created for university competiions and practice
